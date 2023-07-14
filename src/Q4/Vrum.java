@@ -59,9 +59,9 @@ public class Vrum {
     static Scanner scan = new Scanner(System.in);
     public static void vrum() {
         // Criando objetos para testar as classes
-        Motocicleta moto = new Motocicleta("Vermelha", 250, 2022, 15000.0, 500);
-        Carro carro = new Carro("Preto", 150, 2020, 50000.0, 4);
-        Caminhao caminhao = new Caminhao("Branco", 300, 2019, 100000.0, 10000);
+        Motocicleta moto = new Motocicleta("verde", 250, 2022, 15000.0, 600);
+        Carro carro = new Carro("Branco", 150, 2019, 50000.0, 4);
+        Caminhao caminhao = new Caminhao("Rosa", 300, 2022, 100000.0, 10001);
 
         // Exibindo informações dos veículos
         System.out.println("Informações da Motocicleta:");

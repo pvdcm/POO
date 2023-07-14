@@ -2,7 +2,6 @@ package Q1;
 
 import java.util.Scanner;
 
-// Classe abstrata Q1.Calculadora
 abstract class Calculadora {
     public abstract double somar(double x, double y);
     public abstract double subtrair(double x, double y);
@@ -64,7 +63,7 @@ public class Calc {
 
         try {
             // Testando a divisão por zero
-            double resultadoDivisao = calculadora.dividir(5, 0);
+            double resultadoDivisao = calculadora.dividir(10, 2);
             System.out.println("Divisão: " + resultadoDivisao);
         } catch (ArithmeticException e) {
             System.out.println("Erro: " + e.getMessage());
@@ -72,7 +71,7 @@ public class Calc {
 
         // Testando as operações adicionais
         try {
-            double resultadoRaizQuadrada = calculadora.calcularRaizQuadrada(-16);
+            double resultadoRaizQuadrada = calculadora.calcularRaizQuadrada(16);
             System.out.println("Raiz quadrada: " + resultadoRaizQuadrada);
         } catch (ArithmeticException e) {
             System.out.println("Erro: " + e.getMessage());

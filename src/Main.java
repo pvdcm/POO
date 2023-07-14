@@ -37,16 +37,14 @@ public class Main {
                             9 - Cinema
                             0 - Para sair 
                                    
-                            """
+                    """
             );
             do {
-                try
-                {
+                try {
                     System.out.print("=> ");
-                   opc = scan.nextInt();
+                    opc = scan.nextInt();
                 }
-                catch (Exception e)
-                {
+                catch (Exception e){
                     opc = -1;
                 }
             }
@@ -62,7 +60,6 @@ public class Main {
                 case 8 -> new AltPais().altPais();
                 case 9 -> new Cinema().run();
                 case 0 -> sair = true;
-          // default -> sair = false;
                 }
 
             }while (!sair);
